@@ -1393,6 +1393,14 @@ Default: 1
 .Pp
 Source:
 .Xr jail 8
+.It Pf allow_kmem= Op 0 | 1
+Set whether a process in the jail has access to /dev/kmem and related devices.
+This will allow a jailed Xorg server.
+.Pp
+Default: 0
+.Pp
+Source:
+.Xr jail 8
 .It Pf allow_sysvipc= Op 0 | 1
 Set whether a process in the jail has access to System V IPC
 primitives.

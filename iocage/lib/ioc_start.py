@@ -98,6 +98,7 @@ class IOCStart(object):
         enforce_statfs = self.conf["enforce_statfs"]
         children_max = self.conf["children_max"]
         allow_set_hostname = self.conf["allow_set_hostname"]
+        allow_kmem = self.conf["allow_kmem"]
         allow_sysvipc = self.conf["allow_sysvipc"]
         allow_raw_sockets = self.conf["allow_raw_sockets"]
         allow_chflags = self.conf["allow_chflags"]
@@ -269,6 +270,7 @@ class IOCStart(object):
                            f"enforce_statfs={enforce_statfs}",
                            f"children.max={children_max}",
                            f"allow.set_hostname={allow_set_hostname}",
+                           f"allow.kmem={allow_kmem}",
                            f"allow.sysvipc={allow_sysvipc}",
                            _sysvmsg,
                            _sysvsem,
